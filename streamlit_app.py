@@ -40,8 +40,8 @@ try:
     streamlit.error("plesae select a fruit to get information.")
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
-except URLError as e:
-  streamlit.error()
+  except URLError as e:
+    streamlit.error()
     
    
 #     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
